@@ -1,0 +1,125 @@
+/* File: styles.css */
+/* Reset e Tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    color: #000;
+    background: #fff;
+    line-height: 1.5;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .site-header {
+    background: #cc0000;
+    padding: 0.5rem 0;
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-menu {
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .btn-menu span {
+    width: 24px;
+    height: 2px;
+    background: #fff;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .header-logo img {
+    height: 20px;
+  }
+  .btn-search {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  
+  /* Ad Banner */
+  .ad-banner {
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  .ad-banner img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Layout de Conteúdo */
+  .content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+  }
+  .main-col {
+    flex: 3;
+  }
+  .sidebar {
+    flex: 1;
+  }
+  
+  /* Seções de Artigo */
+  .article-section {
+    margin-bottom: 2rem;
+  }
+  .article-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  @media (min-width: 768px) {
+    .article-inner {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  .article-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+  }
+  .article-content {
+    flex: 1;
+    padding-left: 1rem;
+  }
+  .article-content h2 {
+    color: #bb0000;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+  }
+  .subheading {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  .article-points {
+    list-style: disc inside;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  .article-meta {
+    font-size: 0.875rem;
+    color: #666;
+  }
+  
+  /* Separador
+  
