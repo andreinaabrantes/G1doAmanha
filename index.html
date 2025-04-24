@@ -1,0 +1,187 @@
+```html
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G1 Clone Simplificado</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner container">
+      <button class="btn-menu" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="header-logo">
+        <img src="https://via.placeholder.com/60x20?text=g1" alt="G1 logo">
+        <img src="https://via.placeholder.com/80x20?text=100+anos" alt="100 anos de Globo">
+      </div>
+      <button class="btn-search" aria-label="Buscar">🔍</button>
+    </div>
+  </header>
+
+  <!-- Ad Banner -->
+  <section class="ad-banner">
+    <div class="container">
+      <img src="https://via.placeholder.com/728x90" alt="Anúncio">
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal com Sidebar -->
+  <div class="container content">
+
+    <!-- Coluna Principal de Artigos -->
+    <div class="main-col">
+      <section class="article-section">
+        <div class="article-inner">
+          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 1">
+          <div class="article-content">
+            <h2>A descoberta inesperada do jardim flutuante</h2>
+            <ul class="article-points">
+              <li>Jardim cresce sobre nuvens em clima tropical</li>
+            </ul>
+            <p class="article-meta">Há 5 minutos — Curiosidades</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="article-section">
+        <div class="article-inner">
+          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 2">
+          <div class="article-content">
+            <h2>Robôs pintam mural gigante no centro da cidade</h2>
+            <p class="subheading">Arte Automatizada</p>
+            <ul class="article-points">
+              <li>Pincéis mecânicos criam paisagens coloridas</li>
+              <li>Espectador pode controlar cores via app</li>
+            </ul>
+            <p class="article-meta">Há 20 minutos — Tecnologia</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="article-section">
+        <div class="article-inner">
+          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 3">
+          <div class="article-content">
+            <h2>Cães urbanos ganham aulas de yoga para cão</h2>
+            <ul class="article-points">
+              <li>Instrutores ensinam postura Zen aos pets</li>
+            </ul>
+            <p class="article-meta">Há 40 minutos — Lifestyle</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section class="article-section">
+        <div class="article-inner">
+          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 4">
+          <div class="article-content">
+            <h2>Festival de luzes atrai visitantes durante a noite</h2>
+            <p class="subheading">Noite Iluminada</p>
+            <ul class="article-points">
+              <li>Instalações interativas misturam arte e tecnologia</li>
+              <li>Shows de drone formam desenhos no céu</li>
+            </ul>
+            <p class="article-meta">Há 1 hora — Entretenimento</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Sidebar de Painéis -->
+    <aside class="sidebar">
+      <!-- Mais Lidas -->
+      <div class="panel">
+        <h3>Mais Lidas</h3>
+        <ol>
+          <li><a href="#">Cachoeira escondida: guia de trilha e fotos</a></li>
+          <li><a href="#">Receita viral: bolo arco-íris em 5 passos</a></li>
+          <li><a href="#">História do trem que viajou para Marte</a></li>
+          <li><a href="#">Cinema flutuante estreia na orla</a></li>
+          <li><a href="#">Borboletas translúcidas descobertas em floresta</a></li>
+        </ol>
+      </div>
+      <!-- Painel de Economia -->
+      <div class="panel economy-panel">
+        <h3>Economia</h3>
+        <div class="stats">
+          <div class="label">Ibovespa</div>
+          <div class="value">+2,34%</div>
+        </div>
+        <div class="chart"></div>
+        <div class="currency">
+          <div>Dólar Comercial</div>
+          <div>R$ 5,812 <span class="down">-0,10%</span></div>
+        </div>
+        <div class="currency">
+          <div>Euro</div>
+          <div>R$ 6,501 <span class="down">+0,25%</span></div>
+        </div>
+        <p style="margin-top:1rem;"><a href="#" style="color:#bb0000; text-decoration:none;">Tudo sobre economia →</a></p>
+      </div>
+    </aside>
+
+  </div>
+</body>
+</html>
+```
+```css
+/* styles.css */
+/* Reset e Tipografia */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: sans-serif; color: #000; background: #fff; line-height: 1.5; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* Header */
+.site-header { background: #cc0000; padding: 0.5rem 0; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; }
+.btn-menu { background: none; border: none; display: flex; flex-direction: column; gap: 4px; }
+.btn-menu span { width: 24px; height: 2px; background: #fff; }
+.header-logo { display: flex; align-items: center; gap: 0.5rem; }
+.header-logo img { height: 20px; }
+.btn-search { background: none; border: none; font-size: 1.25rem; color: #fff; }
+
+/* Ad Banner */
+.ad-banner { padding: 1rem 0; border-bottom: 1px solid #ddd; }
+.ad-banner img { width: 100%; display: block; }
+
+/* Layout de Conteúdo */
+.content { display: flex; gap: 2rem; padding: 2rem 0; }
+.main-col { flex: 3; }
+.sidebar { flex: 1; }
+
+/* Seções de Artigo */
+.article-section { margin-bottom: 2rem; }
+.article-inner { display: flex; flex-direction: column; gap: 1rem; }
+@media(min-width: 768px) { .article-inner { flex-direction: row; align-items: flex-start; } }
+.article-image { width: 100%; max-width: 600px; border-radius: 8px; }
+.article-content { flex: 1; padding-left: 1rem; }
+.article-content h2 { color: #bb0000; font-size: 1.75rem; margin-bottom: 0.5rem; }
+.subheading { font-size: 0.875rem; color: #666; margin-bottom: 0.5rem; }
+.article-points { list-style: disc inside; margin-bottom: 0.5rem; color: #333; }
+.article-meta { font-size: 0.875rem; color: #666; }
+
+/* Separador */
+hr { border: none; border-top: 1px solid #ddd; margin: 2rem 0; }
+
+/* Painéis de Sidebar */
+.panel { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; margin-bottom: 1.5rem; }
+.panel h3 { font-size: 1.25rem; margin-bottom: 1rem; color: #000; }
+.panel ol { list-style: none; counter-reset: rank; }
+.panel li { display: flex; align-items: flex-start; margin-bottom: 0.75rem; counter-increment: rank; }
+.panel li::before { content: counter(rank) "."; font-weight: bold; margin-right: 0.5rem; color: #666; }
+.panel a { text-decoration: none; color: #bb0000; font-size: 0.95rem; line-height: 1.3; }
+.panel a:hover { text-decoration: underline; }
+
+/* Painel de Economia */
+.economy-panel .stats { margin-bottom: 1rem; }
+.economy-panel .stats .label { font-size: 0.875rem; color: #666; }
+.economy-panel .stats .value { font-size: 1.5rem; font-weight: bold; color: #0a0; }
+.economy-panel .chart { width: 100%; height: 60px; background: #eaeaea; border-radius: 4px; margin: 0.5rem 0; }
+.economy-panel .currency { display: flex; justify-content: space-between; font-size: 0.95rem; }
+.economy-panel .currency .down { color: #c00; }
+```
