@@ -1,5 +1,3 @@
-```html
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -11,136 +9,124 @@
 <body>
   <!-- Header -->
   <header class="site-header">
-    <div class="header-inner container">
+    <div class="container header-inner">
       <button class="btn-menu" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
       <div class="header-logo">
-        <img src="https://via.placeholder.com/60x20?text=g1" alt="G1 logo">
-        <img src="https://via.placeholder.com/80x20?text=100+anos" alt="100 anos de Globo">
+        <img src="images/g1-logo.png" alt="G1 logo">
+        <img src="images/100-anos.png" alt="100 anos de Globo">
       </div>
       <button class="btn-search" aria-label="Buscar">🔍</button>
     </div>
   </header>
 
-  <!-- Ad Banner (tamanho reduzido) -->
+  <!-- Ad Banner -->
   <section class="ad-banner">
     <div class="container">
-      <img src="https://via.placeholder.com/600x75" alt="Anúncio" style="width:600px; height:auto;">
+      <img src="images/ad-banner.jpg" alt="Anúncio">
     </div>
   </section>
 
-  <!-- Conteúdo Principal com Sidebar -->
-  <div class="container content">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-inner">
+      <div class="hero-left">
+        <article class="hero-main">
+          <div class="category">Sociedade-Semente</div>
+          <h2>O sentir e a Empatia</h2>
+          <p>Uma sociedade onde cada ação funciona como “semente de impacto”, germinando benefícios sociais e ambientais interligados, enraizados e transparentes.</p>
+        </article>
+        <article class="hero-sub">
+          <div class="category">Práticas Transformadoras</div>
+          <p>Empresas com indicadores vivos: árvores plantadas, famílias abastecidas, jovens formados e CO₂ evitado — tudo registrado em blockchain verde social.</p>
+        </article>
+        <article class="hero-sub">
+          <div class="category">ODS Atendidos</div>
+          <p>Água potável (ODS 6), Fome Zero (ODS 2), Ação Climática (ODS 13), Consumo Responsável (ODS 12).</p>
+        </article>
+      </div>
+      <div class="hero-carousel">
+        <span class="nav prev">‹</span>
+        <img src="images/sociedade-semente.jpg" alt="Sociedade Semente">
+        <span class="nav next">›</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- Coluna Principal de Artigos -->
+  <!-- Main Content with Sidebar -->
+  <div class="container content">
     <div class="main-col">
-      <!-- Artigo 1 -->
+      <!-- Article 1 -->
       <section class="article-section">
         <div class="article-inner">
-          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 1">
+          <img class="article-image" src="images/lideranca-negra.jpg" alt="Liderança Negra">
           <div class="article-content">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <ul class="article-points">
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</li>
-            </ul>
-            <p class="article-meta">Há 5 minutos — Lorem Ipsum</p>
+            <h2>Governo lança política inédita para ampliar presença de mulheres negras em cargos de liderança no setor público e privado</h2>
+            <p class="subheading">Batizada de “Iniciativa Liderança Negra”, proposta estabelece meta de 30% até 2030; “Não é cotas, é reparação histórica”, diz ministra.</p>
+            <p class="article-meta">Há 5 minutos — Política</p>
           </div>
         </div>
       </section>
       <hr>
-      <!-- Artigo 2 -->
+      <!-- Article 2 -->
       <section class="article-section">
         <div class="article-inner">
-          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 2">
+          <img class="article-image" src="images/baia-guanabara.jpg" alt="Baía de Guanabara">
           <div class="article-content">
-            <h2>Dolor sit amet consectetur</h2>
-            <p class="subheading">Lorem Ipsum Subtítulo</p>
-            <ul class="article-points">
-              <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</li>
-              <li>Excepteur sint occaecat cupidatat non proident.</li>
-            </ul>
-            <p class="article-meta">Há 20 minutos — Lorem Ipsum</p>
+            <h2>Baía de Guanabara: Uma Nova Esperança</h2>
+            <p class="subheading">Pela primeira vez não há resíduos plásticos ou esgoto; ecossistemas se recuperam e biodiversidade floresce.</p>
+            <p class="article-meta">Há 10 minutos — Meio Ambiente</p>
           </div>
         </div>
       </section>
       <hr>
-      <!-- Artigo 3 -->
+      <!-- Article 3 -->
       <section class="article-section">
         <div class="article-inner">
-          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 3">
+          <img class="article-image" src="images/economia-verde.jpg" alt="Economia Verde">
           <div class="article-content">
-            <h2>Sed do eiusmod tempor</h2>
-            <ul class="article-points">
-              <li>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-            </ul>
-            <p class="article-meta">Há 40 minutos — Lorem Ipsum</p>
+            <h2>10 anos sem crimes de violência: comemoração celebra paz e comunidade unida</h2>
+            <p class="subheading">Investimento em educação é apontado como modelo de sucesso para manter a segurança e coesão social.</p>
+            <p class="article-meta">Há 2 minutos — Sociedade</p>
           </div>
         </div>
       </section>
       <hr>
-      <!-- Artigo 4 -->
+      <!-- Article 4 -->
       <section class="article-section">
         <div class="article-inner">
-          <img class="article-image" src="https://via.placeholder.com/600x400" alt="Notícia Aleatória 4">
+          <img class="article-image" src="images/acordo-paris.jpg" alt="Acordo de Paris">
           <div class="article-content">
-            <h2>Incididunt ut labore et dolore</h2>
-            <p class="subheading">Lorem Ipsum Subtítulo</p>
-            <ul class="article-points">
-              <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco.</li>
-              <li>Labore et dolore magna aliqua.</li>
-            </ul>
-            <p class="article-meta">Há 1 hora — Lorem Ipsum</p>
+            <h2>Vitória Global: Humanidade cumpre o Acordo de Paris e controla crise climática</h2>
+            <p class="subheading">Todos os países atingiram suas metas; conferência da ONU vira observatório de boas práticas.</p>
+            <p class="article-meta">Há poucos minutos — Meio Ambiente</p>
           </div>
         </div>
       </section>
     </div>
-
-    <!-- Sidebar de Painéis -->
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Mais Lidas -->
       <div class="panel">
         <h3>Mais Lidas</h3>
         <ol>
-          <li><a href="#" style="color:#bb0000;">Lorem ipsum dolor sit amet</a></li>
-          <li><a href="#" style="color:#bb0000;">Consectetur adipiscing elit</a></li>
-          <li><a href="#" style="color:#bb0000;">Sed do eiusmod tempor</a></li>
-          <li><a href="#" style="color:#bb0000;">Incididunt ut labore et dolore</a></li>
-          <li><a href="#" style="color:#bb0000;">Magna aliqua ut enim ad minim veniam</a></li>
+          <li><a href="#">Governo lança política inédita para ampliar presença de mulheres negras em cargos de liderança</a></li>
+          <li><a href="#">Baía de Guanabara: Uma Nova Esperança</a></li>
+          <li><a href="#">Municípios celebram transição bem-sucedida para economia verde</a></li>
+          <li><a href="#">Vitória Global: Acordo de Paris controlado</a></li>
+          <li><a href="#">Empresas privadas adotam 100% de energia renovável</a></li>
         </ol>
       </div>
-
-      <!-- Separador entre painéis -->
       <hr>
-
-      <!-- Painel de Economia -->
       <div class="panel economy-panel">
-        <div class="economy-header" style="display:flex; align-items:center; justify-content:space-between;">
-          <h3>Economia</h3>
-          <img src="https://via.placeholder.com/80x20?text=Valor+Pro" alt="Valor Pro" style="height:24px;">
-        </div>
-        <div class="stats">
-          <div class="label">Ibovespa</div>
-          <div class="value">+1,80%</div>
-        </div>
-        <div class="chart"></div>
-        <div class="currency">
-          <div>Dólar Comercial</div>
-          <div>R$ 5,691 <span class="down">-0,48%</span></div>
-        </div>
-        <div class="currency">
-          <div>Euro</div>
-          <div>R$ 6,479 <span class="down">+0,05%</span></div>
-        </div>
-        <p style="margin-top:1rem;">
-          <a href="#" style="color:#bb0000; text-decoration:none;">Tudo sobre economia →</a>
-        </p>
+        <h3>Economia Global</h3>
+        <div class="stats"><span>Índice Global (IGL)</span><span>+4,5%</span></div>
+        <div class="currency"><span>GlobalCoin (GLC)</span><span>1,05 <small>+2,0%</small></span></div>
+        <div class="currency"><span>EcoToken (ECT)</span><span>0,98 <small>+1,5%</small></span></div>
+        <a class="more-link" href="#">Tudo sobre economia →</a>
       </div>
     </aside>
-
   </div>
 </body>
 </html>
-```
 
