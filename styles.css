@@ -1,4 +1,5 @@
 
+css
 /* styles.css */
 /* Reset e Tipografia */
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -71,3 +72,13 @@ img { display: block; max-width: 100%; height: auto; border-radius: 12px; }
 .economy-panel .stats,
 .economy-panel .currency { display: flex; justify-content: space-between; font-size: 1rem; margin-bottom: 0.5rem; }
 .economy-panel small { font-size: 0.875rem; color: #0a0; margin-left: 0.5rem; }
+
+/* Responsive: Stack sidebar below main content on mobile */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .sidebar {
+    margin-top: 2rem;
+  }
+}
