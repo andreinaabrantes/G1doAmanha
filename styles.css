@@ -108,3 +108,14 @@ img {
     margin-top: 2rem;
   }
 }
+
+.hero-carousel img {
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  opacity: 0;
+}
+.hero-carousel img[style*="display: block"] {
+  opacity: 1;
+}
