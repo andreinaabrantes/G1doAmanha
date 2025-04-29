@@ -109,13 +109,19 @@ img {
   }
 }
 
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;      /* 9/16 = 0.5625 → 56.25% de altura */
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
 .hero-carousel img {
-  transition: opacity 0.5s ease;
   position: absolute;
   top: 0; left: 0;
-  width: 100%;
-  opacity: 0;
-}
-.hero-carousel img[style*="display: block"] {
-  opacity: 1;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: opacity 0.5s ease;
 }
