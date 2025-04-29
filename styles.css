@@ -111,8 +111,6 @@ img {
 
 .hero-carousel {
   position: relative;
-  width: auto;
-  height: auto;
   aspect-ratio: 16/9;       /* ou outra proporção que suas imagens tiverem */
   overflow: hidden;         /* esconde eventuais “vazamentos” das imagens */
   margin-bottom: 1.5rem;    /* afasta o próximo bloco */
@@ -121,8 +119,6 @@ img {
 .hero-carousel img {
   position: absolute;
   top: 0; left: 0;
-  width: auto;
-  height: auto;
   object-fit: cover;        /* preenche sem distorcer */
   transition: opacity 1s ease;
 }
