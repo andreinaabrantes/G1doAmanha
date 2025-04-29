@@ -57,33 +57,7 @@
         <span class="nav next">›</span>
       </div>
     </div>
-   
-    <!-- coloque este script após o markup do carrossel -->
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.hero-carousel img');
-    let currentIndex = 0;
-
-    // Esconde todos, exibe apenas o primeiro
-    slides.forEach((slide, i) => {
-      slide.style.display = i === 0 ? 'block' : 'none';
-    });
-
-    // Função que avança o slide
-    function nextSlide() {
-      // esconde o atual
-      slides[currentIndex].style.display = 'none';
-      // calcula o próximo índice (circular)
-      currentIndex = (currentIndex + 1) % slides.length;
-      // exibe o próximo
-      slides[currentIndex].style.display = 'block';
-    }
-
-    // dispara a troca a cada 2000 ms (2 s)
-    setInterval(nextSlide, 2000);
-  });
-</script>
-  </section>
+   </section>
 
   <!-- Main Content with Sidebar -->
   <div class="container content">
@@ -170,7 +144,31 @@
       </div>
     </aside>
   </div>
+<!-- coloque este script após o markup do carrossel -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-carousel img');
+    let currentIndex = 0;
 
+    // Esconde todos, exibe apenas o primeiro
+    slides.forEach((slide, i) => {
+      slide.style.display = i === 0 ? 'block' : 'none';
+    });
+
+    // Função que avança o slide
+    function nextSlide() {
+      // esconde o atual
+      slides[currentIndex].style.display = 'none';
+      // calcula o próximo índice (circular)
+      currentIndex = (currentIndex + 1) % slides.length;
+      // exibe o próximo
+      slides[currentIndex].style.display = 'block';
+    }
+
+    // dispara a troca a cada 2000 ms (2 s)
+    setInterval(nextSlide, 2000);
+  });
+</script>
 </body>
 </html>
 
