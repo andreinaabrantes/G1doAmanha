@@ -22,11 +22,11 @@ img {
 .header-inner { display: flex; align-items: center; justify-content: space-between; }
 .btn-menu, .btn-search { background: none; border: none; cursor: pointer; }
 .btn-menu span { display: block; width: 24px; height: 2px; background: #fff; margin: 4px 0; }
-.header-logo img { height: 20px; }
+.header-logo img { height: 30px; }
 .btn-search { font-size: 1.25rem; color: #fff; }
 
 /* Ad Banner */
-.ad-banner { padding: 1rem 0; }
+/* .ad-banner { padding: 1rem 0; } */
 
 /* Hero Section */
 .hero-section { padding: 2rem 0; }
