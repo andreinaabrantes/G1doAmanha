@@ -120,13 +120,12 @@ img {
 
 .hero-carousel img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  top: 50%;
+  left: 50%;
+  width: auto;
   height: 100%;
-  object-fit: cover;             /* preenche todo o container */
-  object-position: center;       /* você pode trocar para “top” ou “bottom” */
+  transform: translate(-50%, -50%);
+  object-fit: contain;           /* garante que tudo apareça, sem corte */
   transition: opacity 1s ease;
-  /* remova o border-radius genérico se quiser herdar só do container */
   border-radius: 0;
 }
